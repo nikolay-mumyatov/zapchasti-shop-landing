@@ -10,7 +10,7 @@ let gulp = require('gulp'),
     imagemin = require('gulp-imagemin'); // Минификация изображений.
 
 gulp.task('styles', () => { // Сбор, оптимизация и минификация SCSS.
-    return gulp .src('./app/scss/**/*.scss')
+    return gulp .src('./app/scss/style.scss')
                 .pipe(sourcemaps.init())
                 .pipe(concat('style.scss'))
                 .pipe(sass({
@@ -42,8 +42,6 @@ gulp.task('scripts', () => { // Сбор, оптимизация и минифи
 gulp.task('libs', () =>{ // Подключение библиотек
     return gulp .src('./node_modules/jquery/dist/jquery.min.js')
     .pipe(gulp.dest('./build/js')),
-    gulp.src('./node_modules/bootstrap/dist/css/bootstrap-grid.min.css')
-    .pipe(gulp.dest('./build/css')),
     gulp.src('./node_modules/normalize.css/normalize.css')
     .pipe(gulp.dest('./build/css'));
 });
@@ -83,16 +81,16 @@ gulp.task('watch', () => { // Запуск локального хостинга
         port: 3000
     });
         // Отслеживание изменений в файлах и перезапись конечного результата.
-    gulp.watch('./scss/**/*', gulp.series('styles'));
-    gulp.watch('./js/**/*', gulp.series('scripts'));
-    gulp.watch("./js/**/*.js").on('change', browserSync.reload); //
+    gulp.watch('./app/scss/**/*', gulp.series('styles'));
+    gulp.watch('./app/js/**/*', gulp.series('scripts'));
+    gulp.watch("./app/js/**/*.js").on('change', browserSync.reload); //
     gulp.watch("./**/*.html").on('change', browserSync.reload); // Обновление в браузере при изменении файлов.
     gulp.watch("./**/*.php").on('change', browserSync.reload); //
-    gulp.watch('./img/**', gulp.series('image-compress')); // Отслеживание добавления/изменений изображений.
+    gulp.watch('./app/img/**', gulp.series('image-compress')); // Отслеживание добавления/изменений изображений.
 });
 
 
 //Таск по умолчанию запускает styles, scripts и watch.
 gulp.task('default', gulp.series(gulp.parallel('styles', 'scripts'), 'watch'));
 
-gulp.task('build', gulp.series('del',gulp.parallel('pages','styles', 'scripts', 'image-compress'), 'watch'));
+gulp.task('build', gulp.series('del',gulp.parallel('libs','pages','styles', 'scripts', 'image-compress'), 'watch'));

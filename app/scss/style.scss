@@ -1,0 +1,115 @@
+@import "color";
+
+*{
+    font-family: 'Lato';
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header{
+    height: 100vh;
+    background-image: url(/build/img/header/image-top-min.png);
+    background-position-x:  center;
+    background-repeat: no-repeat;
+    
+    .header{
+        padding-top: 34px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &_contacts{
+            &_tel{
+                color: $white;
+                font-size: 26px;
+            }
+            &_btn{
+                color: $red;
+            }
+        }
+    }
+
+    .top-info{
+        text-align: center;
+        color: $white;
+        line-height: 46px;
+        margin-top: 10vh;
+        h1{
+            font-size: 44px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        p{
+            font-size: 30px;
+            margin: 10px 0 0 0; 
+        }
+    }
+
+    .top-benefit{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &_item{
+            margin-top: 10vh;
+            max-width: 160px;
+            text-align: center;
+            color: $white;
+            margin-right: 90px;
+            &:last-child{
+                margin-right: 0;
+            }
+            &_img{
+                max-width: 160px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            p{
+                font-size: 18px;
+
+            }
+        }
+    }
+
+    .top-feedback-btn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        &_item{
+            margin-top: 12vh;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 260px;
+            align-items: center;
+            justify-content: center;
+            button{
+                padding: 16px 40px 16px 40px;
+                border-radius: 25px;
+                border: 2px solid $red;
+                color: $white;
+                font-size: 18px;
+                background-color: initial;
+            }
+            .active-btn{
+                background-color: $red;
+                padding: 16px 50px 16px 50px;
+            }
+            p{
+                margin-top: 20px;
+                max-width: 164px;
+                font-size: 14px;
+                color: $white;
+                text-align: center;
+            }
+        }
+    }
+}
