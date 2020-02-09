@@ -11,6 +11,11 @@
     margin: 0 auto;
 }
 
+.main-title{
+    text-align: center;
+    font-size: 28px;
+}
+
 header{
     height: 100vh;
     background-image: url(/build/img/header/image-top-min.png);
@@ -21,6 +26,7 @@ header{
         padding-top: 34px;
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         justify-content: space-between;
         &_contacts{
             &_tel{
@@ -37,7 +43,7 @@ header{
         text-align: center;
         color: $white;
         line-height: 46px;
-        margin-top: 10vh;
+        margin-top: 12vh;
         h1{
             font-size: 44px;
             font-weight: bold;
@@ -109,6 +115,63 @@ header{
                 font-size: 14px;
                 color: $white;
                 text-align: center;
+            }
+        }
+    }
+}
+
+main{
+    .service-block{
+        background-color: $white;
+        max-height: 580px;
+        margin: 0;
+        padding-bottom: 80px;
+        .service{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            &_item{
+                flex-basis: 33.33%;
+                margin-top: 110px;
+                text-align: center;
+                h3{
+                    margin-top: 30px;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                p{
+                    display: inline-block;
+                    margin-top: 20px;
+                    max-width: 240px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .auto-block{
+        background-color: $white;
+        max-height: 580px;
+        margin: 0;
+        padding-bottom: 80px;
+        margin-top: 80px;
+        .auto{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            &_section{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-basis: 100%;
+                margin-top: 30px;
+                &:first-child{
+                    margin-top: 80px;
+                }
+                .auto_item{
+                    margin: 0 20px 0 20px;
+                }
             }
         }
     }
