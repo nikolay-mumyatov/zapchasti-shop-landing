@@ -13,7 +13,9 @@
 
 .main-title{
     text-align: center;
-    font-size: 28px;
+    font-size: 34px;
+    padding-top: 80px;
+    margin-bottom: 10vh;
 }
 
 header{
@@ -167,11 +169,50 @@ main{
                 flex-basis: 100%;
                 margin-top: 30px;
                 &:first-child{
-                    margin-top: 80px;
+                    margin-top: 0px;
                 }
                 .auto_item{
                     margin: 0 20px 0 20px;
                 }
+            }
+        }
+    }
+    .feedback-block{
+        background-color: $grey;
+        max-height: 580px;
+        margin: 0;
+        padding-bottom: 80px;
+        // margin-top: 80px;
+        .feedback{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            &_item{
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                margin-right: 30px;
+                .feedback_item_img{
+                    align-items: flex-start;
+                    margin-right: 20px;
+                }
+                .feedback_item_text{
+                    .feedback-name{
+                        font-size: 12px;
+                    }
+                    .feedback-title{
+                        color: $red;
+                        font-size: 16px;
+                        margin-top: 14px;
+                    }
+                    .feedback-text{
+                        max-width: 340px;
+                        font-size: 14px;
+                        margin-top: 14px;
+                    }
+                }
+                
             }
         }
     }
