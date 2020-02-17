@@ -1,17 +1,18 @@
 @import "color";
 
-*{
+* {
     font-family: 'Lato';
     padding: 0;
     margin: 0;
 }
 
-.container{
+.container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 
-.main-title{
+.main-title {
     text-align: center;
     font-size: 34px;
     padding-top: 100px;
@@ -22,82 +23,92 @@
     margin-bottom: 30px;
 }
 
-header{
+header {
     height: 100vh;
     background-image: url(/build/img/header/image-top-min.png);
-    background-position-x:  center;
+    background-position-x: center;
     background-repeat: no-repeat;
-    
-    .header{
+
+    .header {
         padding-top: 34px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        &_contacts{
-            &_tel{
+
+        &_contacts {
+            &_tel {
                 color: $white;
                 font-size: 26px;
             }
-            &_btn{
+
+            &_btn {
+                display: block;
+                text-align: center;
                 color: $red;
-                margin-left: 6px;
             }
         }
     }
 
-    .top-info{
+    .top-info {
         text-align: center;
         color: $white;
         line-height: 46px;
         margin-top: 80px;
-        h1{
+
+        h1 {
             font-size: 44px;
             font-weight: bold;
             text-transform: uppercase;
             margin: 0;
         }
-        p{
+
+        p {
             font-size: 30px;
-            margin: 10px 0 0 0; 
+            margin: 10px 0 0 0;
         }
     }
 
-    .top-benefit{
+    .top-benefit {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         text-align: center;
-        &_item{
+
+        &_item {
             margin-top: 80px;
             max-width: 160px;
             text-align: center;
             color: $white;
             margin-right: 90px;
-            &:last-child{
+
+            &:last-child {
                 margin-right: 0;
             }
-            &_img{
+
+            &_img {
                 max-width: 160px;
                 height: 100px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
-            p{
+
+            p {
                 font-size: 18px;
 
             }
         }
     }
 
-    .top-feedback-btn{
+    .top-feedback-btn {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        &_item{
+
+        &_item {
             margin-top: 90px;
             padding-bottom: 100px;
             display: flex;
@@ -105,7 +116,8 @@ header{
             max-width: 260px;
             align-items: center;
             justify-content: center;
-            button{
+
+            button {
                 padding: 16px 40px 16px 40px;
                 border-radius: 25px;
                 border: 2px solid $red;
@@ -113,11 +125,13 @@ header{
                 font-size: 18px;
                 background-color: initial;
             }
-            .active-btn{
+
+            .active-btn {
                 background-color: $red;
                 padding: 16px 50px 16px 50px;
             }
-            p{
+
+            p {
                 margin-top: 20px;
                 max-width: 164px;
                 font-size: 14px;
@@ -128,26 +142,31 @@ header{
     }
 }
 
-main{
-    .service-block{
+main {
+    .service-block {
         background-color: $white;
         margin: 0;
         padding-bottom: 80px;
-        .service{
+
+        .service {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: flex-start;
-            &_item{
+            margin-top: 75px;
+
+            &_item {
                 flex-basis: 33.33%;
-                margin-top: 110px;
                 text-align: center;
-                h3{
-                    margin-top: 30px;
+                margin: 25px 0px;
+
+                h3 {
+                    margin-top: 25px;
                     font-size: 16px;
                     font-weight: 700;
                 }
-                p{
+
+                p {
                     display: inline-block;
                     margin-top: 20px;
                     max-width: 240px;
@@ -156,32 +175,37 @@ main{
             }
         }
     }
-    .get_price-block{
+
+    .get_price-block {
         background-color: #c8cad584;
         display: flex;
         justify-content: center;
         margin: 0;
         padding-bottom: 120px;
-        .main-p{
+
+        .main-p {
             text-align: center;
             margin-bottom: 30px;
         }
-        .get_price{
-            .get_price_form{
+
+        .get_price {
+            .get_price_form {
                 display: flex;
                 justify-content: space-around;
                 align-items: stretch;
                 flex-wrap: wrap;
                 border: 4px solid $white;
                 padding: 40px;
-                .get_price_form_item{
-                    max-width: 230px;
-                    min-width: 230px;
+
+                .get_price_form_item {
+                    width: 230px;
                     margin-right: 40px;
-                    &:last-child{
+
+                    &:last-child {
                         margin-right: 0;
                     }
-                    .submit-btn{
+
+                    .submit-btn {
                         padding: 14px;
                         width: 100%;
                         background-color: $red;
@@ -190,20 +214,25 @@ main{
                         border-radius: 25px;
                         margin-top: 18px;
                     }
-                    .list{
+
+                    .list {
                         margin-bottom: 14px;
-                        small{
+
+                        small {
                             display: inline-block;
                             margin-bottom: 8px;
                         }
-                        .list_item{
+
+                        .list_item {
                             position: relative;
-                            img{
+
+                            img {
                                 position: absolute;
                                 top: 50%;
                                 right: 10%;
                             }
-                            select{
+
+                            select {
                                 outline: none;
                                 display: inline-block;
                                 width: 100%;
@@ -214,7 +243,9 @@ main{
                                 color: #444;
                             }
                         }
-                        #tel, #email {
+
+                        #tel,
+                        #email {
                             outline: none;
                             display: block;
                             padding: 10px 10px 10px 10px;
@@ -225,12 +256,14 @@ main{
                             font-size: 14px;
                         }
                     }
+
                     .text {
-                        small{
+                        small {
                             display: inline-block;
                             margin-bottom: 8px;
                         }
-                        textarea{
+
+                        textarea {
                             outline: none;
                             resize: none;
                             overflow: auto;
@@ -239,12 +272,14 @@ main{
                             width: 90%;
                         }
                     }
+
                     .text-name {
-                        small{
+                        small {
                             display: inline-block;
                             margin-bottom: 8px;
                         }
-                        #name{
+
+                        #name {
                             outline: none;
                             display: block;
                             padding: 10px 10px 10px 10px;
@@ -258,94 +293,114 @@ main{
             }
         }
     }
-    .auto-block{
+
+    .auto-block {
         background-color: $white;
         margin: 0;
         padding-bottom: 100px;
-        .auto{
+
+        .auto {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: flex-start;
-            &_section{
+
+            &_section {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 flex-basis: 100%;
                 margin-top: 30px;
-                &:first-child{
+
+                &:first-child {
                     margin-top: 0px;
                 }
-                .auto_item{
-                    margin: 0 20px 0 20px;
+
+                .auto_item {
+                    margin: 0 20px;
                 }
             }
         }
     }
-    .feedback-block{
+
+    .feedback-block {
         background-color: $grey;
         margin: 0;
         padding-bottom: 100px;
-        .feedback{
+
+        .feedback {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            &_item{
+
+            &_item {
                 padding: 20px;
                 display: flex;
                 justify-content: center;
-                margin-right: 30px;
-                .feedback_item_img{
+                margin-right: 0px;
+
+                .feedback_item_img {
                     align-items: flex-start;
                     margin-right: 20px;
                 }
-                .feedback_item_text{
-                    .feedback-name{
+
+                .feedback_item_text {
+                    .feedback-name {
                         font-size: 12px;
                     }
-                    .feedback-title{
+
+                    .feedback-title {
                         color: $red;
                         font-size: 16px;
                         margin-top: 14px;
                     }
-                    .feedback-text{
+
+                    .feedback-text {
                         max-width: 340px;
                         font-size: 14px;
                         margin-top: 14px;
                     }
                 }
-                
+
             }
         }
     }
-    .consultation-block{
+
+    .consultation-block {
         background-color: #c8cad584;
         display: flex;
         justify-content: center;
         margin: 0;
         padding-bottom: 120px;
-        p{
+
+        p {
             text-align: center;
             margin-bottom: 20px;
         }
-        .consultation{
+
+        .consultation {
             max-width: 740px;
             border: 4px solid $white;
-            padding: 40px 20px 40px 20px;
-            .consultation_form{
+            padding: 40px 20px;
+
+            .consultation_form {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
-                input[type=text], input[type=tel] {
+
+                input[type=text],
+                input[type=tel] {
                     padding: 10px;
                     display: block;
                     width: 290px;
                 }
+
                 input[type=tel] {
                     margin-left: 30px;
                 }
+
                 input[type=submit] {
                     padding: 16px;
                     width: 300px;
@@ -358,51 +413,56 @@ main{
 
             }
         }
-
-
     }
 }
 
-footer{
-    .contacts-block{
+footer {
+    .contacts-block {
         background-image: url(/build/img/footer/map.png);
         background-position-x: -80px;
         height: 550px;
         display: flex;
 
-        .contacts{
+        .contacts {
             background-color: rgba($red, $alpha: 0.7);
             margin-top: 50px;
             padding: 4vw;
             color: $white;
             text-align: center;
-            h3{
+
+            h3 {
                 font-size: 24px;
                 margin-bottom: 20px;
             }
-            p{
+
+            p {
                 margin-bottom: 20px;
                 font-size: 20px;
             }
-            a{
+
+            a {
                 color: $white;
             }
         }
     }
-    .footer{
-        padding: 34px 0 34px 0;
+
+    .footer {
+        padding: 34px 0;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        &_contacts{
-            &_tel{
+
+        &_contacts {
+            &_tel {
                 color: $black;
                 font-size: 26px;
             }
-            &_btn{
+
+            &_btn {
                 color: $red;
-                margin-left: 6px;
+                display: block;
+                text-align: center;
             }
         }
     }

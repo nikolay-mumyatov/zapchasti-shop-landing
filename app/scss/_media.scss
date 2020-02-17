@@ -1,5 +1,160 @@
-@media (min-height: 990px){
-    header{
+@media (min-height: 990px) {
+    header {
         height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .main-title {
+        font-size: 32px;
+    }
+
+    header {
+        .header {
+            &_contacts {
+                &_tel {
+                    font-size: 22px;
+                }
+
+                &_btn {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .top-info {
+            h1 {
+                font-size: 36px;
+            }
+
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+
+    main {
+        .get_price-block {
+            background-color: #c8cad584;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding-bottom: 120px;
+
+            .main-p {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .get_price {
+                .get_price_form {
+                    padding: 30px;
+
+                    .get_price_form_item {
+                        width: 180px;
+                        margin-right: 30px;
+
+                        .submit-btn {
+                            padding: 10px;
+                            font-size: 16px;
+                            margin-top: 28px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .auto-block {
+            .auto {
+                &_section {
+                    .auto_item {
+                        margin: 0 10px;
+
+                        img {
+                            max-width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .feedback-block {
+            .feedback {
+                &_item {
+                    .feedback_item_text {
+                        .feedback-text {
+                            max-width: 450px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .consultation-block {
+            background-color: #c8cad584;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding-bottom: 120px;
+
+            p {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .consultation {
+                .consultation_form {
+
+                    input[type=text],
+                    input[type=tel] {
+                        width: 230px;
+                    }
+
+                    input[type=submit] {
+                        padding: 14px;
+                        width: 280px;
+                        font-size: 16px;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .contacts-block {
+            background-position-x: -420px;
+
+            .contacts {
+
+                h3 {
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .footer {
+            padding: 24px 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            &_contacts {
+                &_tel {
+                    color: $black;
+                    font-size: 22px;
+                }
+
+                &_btn {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
