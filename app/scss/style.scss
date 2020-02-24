@@ -1,7 +1,7 @@
 @import "color";
 
 * {
-    font-family: 'Lato';
+    font-family: 'Open Sans';
     padding: 0;
     margin: 0;
 }
@@ -40,6 +40,10 @@ header {
             &_tel {
                 color: $white;
                 font-size: 26px;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                }
             }
 
             &_btn {
@@ -241,6 +245,7 @@ main {
                                 border-radius: 3px;
                                 appearance: none; /* убираем дефолнтные стрелочки */
                                 color: #444;
+                                background-color: $white;
                             }
                         }
 
@@ -251,9 +256,12 @@ main {
                             padding: 10px 10px 10px 10px;
                             border: 1px solid #ccc;
                             border-radius: 3px;
-                            color: #444;
                             width: 90%;
                             font-size: 14px;
+                        }
+
+                        input::placeholder{
+                            color: #444;
                         }
                     }
 
@@ -271,6 +279,10 @@ main {
                             padding: 10px 10px 10px 10px;
                             width: 90%;
                         }
+                    }
+
+                    input::placeholder, textarea::placeholder{
+                        color: #444;
                     }
 
                     .text-name {
@@ -457,6 +469,10 @@ footer {
             &_tel {
                 color: $black;
                 font-size: 26px;
+                a{
+                    text-decoration: none;
+                    color: $black;
+                }
             }
 
             &_btn {

@@ -441,6 +441,7 @@
             .get_price {
                 .get_price_form {
                     padding: 30px;
+                    margin: 0 20px;
 
                     .get_price_form_item {
                         width: 280px;
@@ -507,6 +508,7 @@
         .consultation-block {
 
             .consultation {
+                margin: 0 20px;
                 padding: 40px 20px;
                 .consultation_form {
 
@@ -548,4 +550,232 @@
             }
         }
     }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+
+    .main-title {
+        font-size: 22px;
+        padding-top: 50px;
+    }
+
+    header {
+        .header {
+            .logo{
+                img{
+                    max-width: 120px;
+                }
+            }
+            &_contacts {
+                &_tel {
+                    text-align: center;
+                    font-size: 18px;
+                }
+    
+                &_btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    
+        .top-info {
+            line-height: 38px;
+            margin-top: 50px;
+    
+            h1 {
+                font-size: 24px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+        }
+    
+        .top-benefit {
+            align-items: flex-start;
+            &_item {
+                margin-top: 40px;
+                max-width: 70px;
+                margin-right: 40px;
+                p {
+                    font-size: 14px;
+    
+                }
+            }
+        }
+    
+        .top-feedback-btn {
+    
+            &_item {
+                margin-top: 50px;
+                padding-bottom: 50px;
+
+                @media (max-width: 549px) {
+                    &:first-child{
+                        padding-bottom: 40px;
+                    }
+                    &:last-child{
+                        margin-top: 0px;
+                        padding-bottom: 70px;
+                    }
+                }
+    
+                button {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                }
+    
+                .active-btn {
+                    padding: 10px 30px ;
+                }
+    
+                p {
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    main {
+        .service-block {
+            padding-bottom: 50px;
+            .service {
+                margin-top: 50px;
+                &_item {
+                    flex-basis: 70%;
+                    margin: 25px 20px;
+                }
+            }
+        }
+
+        .get_price-block {
+
+            .main-p {
+                padding: 0 20px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .get_price {
+                .get_price_form {
+                    padding: 20px 0px;
+                    margin: 0 20px;
+
+                    .get_price_form_item {
+                        width: 200px;
+                        margin-right: 0px;
+                        margin-bottom: 30px;
+
+                        &:last-child {
+                            margin-top: 10px;
+                        }
+
+                        .submit-btn {
+                            width: 98%;
+                            padding: 10px;
+                            margin-top: 24px;
+                        }
+
+                        .list {
+    
+                            .list_item {
+    
+                                select {
+                                    width: 98%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .auto-block {
+            .auto {
+                &_section {
+                    .auto_item {
+                        margin: 0;
+
+                        img {
+                            max-width: 58px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .feedback-block {
+            .feedback {
+                &_item {
+                    flex-wrap: wrap;
+                    margin-bottom: 20px;
+                    .feedback_item_img {
+                        align-items: flex-start;
+                        margin-right: 0;
+                        img{
+                            max-width: 80px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .feedback_item_text {
+                        display: block;
+                        .feedback-text {
+                            max-width: 430px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .consultation-block {
+
+            .consultation {
+                padding: 40px 20px;
+                .consultation_form {
+
+                    input[type=text],
+                    input[type=tel] {
+                        width: 180px;
+                    }
+
+                    input[type=tel] {
+                        margin-left: 0px;
+                        margin-top: 20px;
+                    }
+
+                    input[type=submit] {
+                        padding: 14px;
+                        width: 210px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .contacts-block {
+            background-position-x: -820px;
+        }
+
+        .footer {
+            .logo{
+                img{
+                    max-width: 120px;
+                }
+            }
+            &_contacts {
+                &_tel {
+                    text-align: center;
+                    font-size: 18px;
+                }
+
+                &_btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
 }
