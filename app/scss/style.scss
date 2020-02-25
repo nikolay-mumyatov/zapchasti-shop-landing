@@ -40,7 +40,9 @@ header {
             &_tel {
                 color: $white;
                 font-size: 26px;
-                a{
+                text-align: right;
+
+                a {
                     text-decoration: none;
                     color: $white;
                 }
@@ -124,15 +126,27 @@ header {
             button {
                 padding: 16px 40px 16px 40px;
                 border-radius: 25px;
-                border: 2px solid $red;
+                border: 3px solid $red;
                 color: $white;
                 font-size: 18px;
                 background-color: initial;
+                outline: none;
+                box-sizing: border-box;
+                cursor: pointer;
             }
 
             .active-btn {
                 background-color: $red;
                 padding: 16px 50px 16px 50px;
+                &:active{
+                    border: 3px solid $white;
+                }
+            }
+
+            #btn_get-price{
+                &:active{
+                    background-color: $red;
+                }
             }
 
             p {
@@ -243,7 +257,8 @@ main {
                                 padding: 10px 50px 10px 10px;
                                 border: 1px solid #ccc;
                                 border-radius: 3px;
-                                appearance: none; /* убираем дефолнтные стрелочки */
+                                appearance: none;
+                                /* убираем дефолнтные стрелочки */
                                 color: #444;
                                 background-color: $white;
                             }
@@ -260,7 +275,7 @@ main {
                             font-size: 14px;
                         }
 
-                        input::placeholder{
+                        input::placeholder {
                             color: #444;
                         }
                     }
@@ -281,7 +296,8 @@ main {
                         }
                     }
 
-                    input::placeholder, textarea::placeholder{
+                    input::placeholder,
+                    textarea::placeholder {
                         color: #444;
                     }
 
@@ -442,6 +458,11 @@ footer {
             color: $white;
             text-align: center;
 
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+
             h3 {
                 font-size: 24px;
                 margin-bottom: 20px;
@@ -469,7 +490,8 @@ footer {
             &_tel {
                 color: $black;
                 font-size: 26px;
-                a{
+
+                a {
                     text-decoration: none;
                     color: $black;
                 }

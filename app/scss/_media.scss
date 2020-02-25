@@ -1,5 +1,5 @@
 @media (max-height: 696px) {
-    header{
+    header {
         height: auto;
     }
 }
@@ -167,59 +167,61 @@
                     text-align: center;
                     font-size: 20px;
                 }
-    
+
                 &_btn {
                     font-size: 14px;
                 }
             }
         }
-    
+
         .top-info {
             line-height: 24px;
             margin-top: 100px;
-    
+
             h1 {
                 font-size: 30px;
             }
-    
+
             p {
                 font-size: 24px;
             }
         }
-    
+
         .top-benefit {
             align-items: flex-start;
+
             &_item {
                 margin-top: 80px;
                 max-width: 100px;
                 margin-right: 80px;
+
                 p {
                     font-size: 14px;
-    
+
                 }
             }
         }
-    
+
         .top-feedback-btn {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-    
+
             &_item {
                 margin-top: 80px;
                 padding-bottom: 80px;
-    
+
                 button {
                     padding: 14px 40px;
                     font-size: 18px;
                     background-color: initial;
                 }
-    
+
                 .active-btn {
-                    padding: 14px 50px ;
+                    padding: 14px 50px;
                 }
-    
+
                 p {
                     margin-top: 14px;
                     font-size: 14px;
@@ -231,7 +233,7 @@
     main {
         .service-block {
             .service {
-    
+
                 &_item {
                     flex-basis: 40%;
                     margin: 25px 20px;
@@ -287,10 +289,12 @@
                     .feedback_item_img {
                         align-items: flex-start;
                         margin-right: 20px;
-                        img{
+
+                        img {
                             max-width: 80px;
                         }
                     }
+
                     .feedback_item_text {
                         .feedback-text {
                             max-width: 450px;
@@ -304,6 +308,7 @@
 
             .consultation {
                 padding: 40px 20px;
+
                 .consultation_form {
 
                     input[type=text],
@@ -354,65 +359,68 @@
                     text-align: center;
                     font-size: 20px;
                 }
-    
+
                 &_btn {
                     font-size: 14px;
                 }
             }
         }
-    
+
         .top-info {
             line-height: 38px;
             margin-top: 70px;
-    
+
             h1 {
                 font-size: 28px;
             }
-    
+
             p {
                 font-size: 20px;
             }
         }
-    
+
         .top-benefit {
             align-items: flex-start;
+
             &_item {
                 margin-top: 70px;
                 max-width: 100px;
                 margin-right: 40px;
+
                 p {
                     font-size: 14px;
-    
+
                 }
             }
         }
-    
+
         .top-feedback-btn {
-    
+
             &_item {
                 margin-top: 70px;
                 padding-bottom: 80px;
 
                 @media (max-width: 549px) {
-                    &:first-child{
+                    &:first-child {
                         padding-bottom: 40px;
                     }
-                    &:last-child{
+
+                    &:last-child {
                         margin-top: 0px;
                         padding-bottom: 70px;
                     }
                 }
-    
+
                 button {
                     padding: 14px 40px;
                     font-size: 18px;
                     background-color: initial;
                 }
-    
+
                 .active-btn {
-                    padding: 14px 50px ;
+                    padding: 14px 50px;
                 }
-    
+
                 p {
                     margin-top: 14px;
                     font-size: 14px;
@@ -459,9 +467,9 @@
                         }
 
                         .list {
-    
+
                             .list_item {
-    
+
                                 select {
                                     width: 98%;
                                 }
@@ -492,10 +500,12 @@
                     .feedback_item_img {
                         align-items: flex-start;
                         margin-right: 20px;
-                        img{
+
+                        img {
                             max-width: 80px;
                         }
                     }
+
                     .feedback_item_text {
                         .feedback-text {
                             max-width: 430px;
@@ -510,6 +520,7 @@
             .consultation {
                 margin: 0 20px;
                 padding: 40px 20px;
+
                 .consultation_form {
 
                     input[type=text],
@@ -561,74 +572,78 @@
 
     header {
         .header {
-            .logo{
-                img{
+            .logo {
+                img {
                     max-width: 120px;
                 }
             }
+
             &_contacts {
                 &_tel {
                     text-align: center;
                     font-size: 18px;
                 }
-    
+
                 &_btn {
                     font-size: 12px;
                 }
             }
         }
-    
+
         .top-info {
             line-height: 38px;
             margin-top: 50px;
-    
+
             h1 {
                 font-size: 24px;
             }
-    
+
             p {
                 font-size: 14px;
             }
         }
-    
+
         .top-benefit {
             align-items: flex-start;
+
             &_item {
                 margin-top: 40px;
                 max-width: 70px;
                 margin-right: 40px;
+
                 p {
                     font-size: 14px;
-    
+
                 }
             }
         }
-    
+
         .top-feedback-btn {
-    
+
             &_item {
                 margin-top: 50px;
                 padding-bottom: 50px;
 
                 @media (max-width: 549px) {
-                    &:first-child{
+                    &:first-child {
                         padding-bottom: 40px;
                     }
-                    &:last-child{
+
+                    &:last-child {
                         margin-top: 0px;
                         padding-bottom: 70px;
                     }
                 }
-    
+
                 button {
                     padding: 10px 20px;
                     font-size: 16px;
                 }
-    
+
                 .active-btn {
-                    padding: 10px 30px ;
+                    padding: 10px 30px;
                 }
-    
+
                 p {
                     margin-top: 10px;
                     font-size: 14px;
@@ -640,8 +655,10 @@
     main {
         .service-block {
             padding-bottom: 50px;
+
             .service {
                 margin-top: 50px;
+
                 &_item {
                     flex-basis: 70%;
                     margin: 25px 20px;
@@ -678,9 +695,9 @@
                         }
 
                         .list {
-    
+
                             .list_item {
-    
+
                                 select {
                                     width: 98%;
                                 }
@@ -710,16 +727,20 @@
                 &_item {
                     flex-wrap: wrap;
                     margin-bottom: 20px;
+
                     .feedback_item_img {
                         align-items: flex-start;
                         margin-right: 0;
-                        img{
+
+                        img {
                             max-width: 80px;
                             margin-bottom: 10px;
                         }
                     }
+
                     .feedback_item_text {
                         display: block;
+
                         .feedback-text {
                             max-width: 430px;
                         }
@@ -732,6 +753,7 @@
 
             .consultation {
                 padding: 40px 20px;
+
                 .consultation_form {
 
                     input[type=text],
@@ -760,11 +782,12 @@
         }
 
         .footer {
-            .logo{
-                img{
+            .logo {
+                img {
                     max-width: 120px;
                 }
             }
+
             &_contacts {
                 &_tel {
                     text-align: center;
