@@ -7,3 +7,6 @@ $(function () {
         $('html, body').animate({scrollTop : scrollForm}, 1000);
     });
 });
+
+// Модальное окно "Быстрая заявка"
+
