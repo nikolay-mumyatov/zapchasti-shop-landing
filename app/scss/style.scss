@@ -29,14 +29,20 @@ header {
     background-position-x: center;
     background-repeat: no-repeat;
 
-    .modal{
+    .modal-bid, .modal-phone {
         position: fixed;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
         background-color: rgba(24, 24, 24, 0.685);
-        // display: none;
+        transition: all 0.5s ease;
+        opacity: 0;
+        visibility: hidden;
+        &_active{
+            visibility: visible;
+            opacity: 1;
+        }
 
         .modal_form{
             position: absolute;
@@ -56,8 +62,9 @@ header {
                 text-align: center;
                 font-size: 14px;
             }
-            .close-btn{
+            .close-btn, .close-btn-phone {
                 position: absolute;
+                padding: 10px;
                 color: red;
                 font-size: 26px;
                 top: 10px;
@@ -93,7 +100,7 @@ header {
                         position: absolute;
                         top: 56%;
                         right: 5%;
-                        width: 13px;
+                        width: 16px;
                         height: 14px;
                     }
                 }
@@ -319,6 +326,13 @@ main {
                         color: $white;
                         border-radius: 25px;
                         margin-top: 18px;
+                        outline: none;
+                        transition: 0.1s all;
+                        &:active{
+                            border: 4px solid $red;
+                            background-color: $contacts-red;
+                            padding: 11px;
+                        }
                     }
 
                     .list {
@@ -525,6 +539,13 @@ main {
                     color: $white;
                     border-radius: 25px;
                     margin-top: 40px;
+                    outline: none;
+                    transition: 0.1s all;
+                    &:active{
+                        border: 4px solid $red;
+                        background-color: $contacts-red;
+                        padding: 13px;
+                    }
                 }
 
             }
