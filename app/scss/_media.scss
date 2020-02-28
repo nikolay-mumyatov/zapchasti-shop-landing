@@ -571,6 +571,19 @@
     }
 
     header {
+
+        .modal-bid,
+        .modal-phone {
+            .modal_form {
+                width: 220px;
+
+                .close-btn,
+                .close-btn-phone {
+                    padding: 5px;
+                }
+            }
+        }
+
         .header {
             .logo {
                 img {
